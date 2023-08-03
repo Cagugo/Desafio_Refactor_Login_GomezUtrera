@@ -1,0 +1,34 @@
+
+<html>
+  <head>
+    <title>{{title}}</title>
+    <link rel='stylesheet' href='css/{{style}}' />
+  </head>
+  <body>
+    <div class='container mt-3'>
+      <h1>Chat</h1>
+      <p id='user-name'></p>
+      <div id='container_chat'>
+        <div class='row'>
+          <div class='col-md-6'>
+            <div class='input-group mb-3'>
+              <input id='mensaje' type='text' class='form-control' placeholder='Escribe tu mensaje' aria-label='Escribe tu mensaje' aria-describedby='enviar' />
+              <button class='btn btn-primary' id='enviar' type='button'>Send</button>
+            </div>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-md-6'>
+            <div class='card'>
+              <div class='card-body'>
+                <p id='chat'></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src='/socket.io/socket.io.js'></script>
+    <script src='/js/chat/index.js'></script>
+  </body>
+</html>
